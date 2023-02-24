@@ -44,7 +44,18 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  // fileName - the name of the file to be written (string); data - the content to be written to the file
+  // Combine the current working directory with the provided file name
+  // path is a module; process.cwd is the current working directory
+  const fileEl = path.join(process.cwd(), fileName);
+  // Write the data to the file at the specified path (fileEl)
+  // fs is a module; writeFileSync is a node method and it writes the data to the file
+  fs.writeFileSync(fileEl, data);
+}
+
+// test of the function above - it works --> text file created successfully
+// writeToFile('test.txt', 'Code with corgis');
 
 // function to initialize program
 function init() {}
