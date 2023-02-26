@@ -1,10 +1,10 @@
-# new
+# test
 
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
 ## Description
 
-new
+test
 
 ## Table of Contents
 
@@ -17,11 +17,11 @@ new
 
 ## Installation
 
-new
+test
 
 ## Usage
 
-new
+test
 
 ## License
 
@@ -29,12 +29,12 @@ This application is covered under the GPL license.
 
 ## Contributing
 
-new
+test
 
 ## Tests
 
-new
+test
+
 
 ## Questions
-
-Questions or concerns? Please contact me at your-email@example.com.
+If you have any questions or concerns about this application, please contact me via email at drzewiecka.katarzyna88@gmail.com. You can also check out my GitHub profile, [Drzazga88](https://github.com/Drzazga88).
