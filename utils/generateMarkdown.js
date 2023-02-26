@@ -1,5 +1,10 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
+  const githubLink = `https://github.com/${answers.username}`;
+  const questionsSection = `
+## Questions
+If you have any questions or concerns about this application, please contact me via email at ${answers.email}. You can also check out my GitHub profile, [${answers.username}](${githubLink}).`;
+  
   let licenseBadgeURL = "";
   let licenseNotice = "";
 
@@ -54,9 +59,7 @@ ${answers.contributing ? answers.contributing : "Contribution guidelines"}
 
 ${answers.tests ? answers.tests : "Testing instructions"}
 
-## Questions
-
-${answers.questions ? answers.questions : "Questions or concerns? Please contact me at your-email@example.com."}
+${questionsSection}
 `;
 }
 

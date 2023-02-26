@@ -5,6 +5,16 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
+    {
+        type: "input",
+        name: "username",
+        question: "What's your username?",
+    },
+    {
+        type: "input",
+        name: "email",
+        question: "What's your email address?",
+    },
   {
     type: "input",
     name: "title",
@@ -44,8 +54,7 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(title, data) {
-  const fileName = `${title.trim().replace(/\s+/g, "-").toLowerCase()}.md`;
+function writeToFile(fileName, data) {
   // fileName - the name of the file to be written (string); data - the content to be written to the file
   // Combine the current working directory with the provided file name
   // path is a module; process.cwd is the current working directory
