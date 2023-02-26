@@ -63,12 +63,11 @@ async function init() {
     try {
         // prompt user with questions
         const answers = await inquirer.prompt(questions);
-        const title = answers.title;
         console.log("Generating README.md...");
         // generate markdown content based on user's answers
-        const markdown = generateMarkdown(title, answers);
+        const markdown = generateMarkdown(answers);
         // write markdown content to file
-        writeToFile(title, markdown);
+        writeToFile("README.md", markdown);
         console.log("README.md file generated successfully!");
       } catch (err) {
         console.error(err);
