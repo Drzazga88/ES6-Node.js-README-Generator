@@ -67,7 +67,7 @@ async function init() {
         // generate markdown content based on user's answers
         const markdown = generateMarkdown(answers);
         // write markdown content to file
-        writeToFile("README.md", markdown);
+        writeToFile("README", markdown);
         console.log("README.md file generated successfully!");
       } catch (err) {
         console.error(err);
