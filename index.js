@@ -7,44 +7,45 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
   {
     type: "input",
-    name: "Title",
+    name: "title",
     question: "What is the title of the project?",
   },
   {
     type: "input",
-    name: "Description",
+    name: "description",
     question: "What is the description of the project?",
   },
   {
     type: "input",
-    name: "Installation",
+    name: "installation",
     question: "Provide installation instructions for the project. ",
   },
   {
     type: "input",
-    name: "Usage",
+    name: "usage",
     question: "Provide usage instructions for the project.",
   },
   {
     type: "list",
-    name: "Licence",
+    name: "license",
     question: "What licence do you want to use?",
     choices: ["MIT", "GPL", "BSD", "None"],
   },
   {
     type: "input",
-    name: "Contributing",
+    name: "contributing",
     question: "Provide contribution guide for the project.",
   },
   {
     type: "input",
-    name: "Tests",
+    name: "tests",
     question: "Provide testing instructions for the project.",
   },
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(title, data) {
+  const fileName = `${title.trim().replace(/\s+/g, "-").toLowerCase()}.md`;
   // fileName - the name of the file to be written (string); data - the content to be written to the file
   // Combine the current working directory with the provided file name
   // path is a module; process.cwd is the current working directory
@@ -58,7 +59,24 @@ function writeToFile(fileName, data) {
 // writeToFile('test.txt', 'Code with corgis');
 
 // function to initialize program
-function init() {}
+async function init() {
+    try {
+        // prompt user with questions
+        const answers = await inquirer.prompt(questions);
+        const title = answers.title;
+        console.log("Generating README.md...");
+        // generate markdown content based on user's answers
+        const markdown = generateMarkdown(title, answers);
+        // write markdown content to file
+        writeToFile(title, markdown);
+        console.log("README.md file generated successfully!");
+      } catch (err) {
+        console.error(err);
+      }
+}
 
 // function call to initialize program
 init();
+
+
+  

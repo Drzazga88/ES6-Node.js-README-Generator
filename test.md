@@ -1,11 +1,10 @@
-# t
-  
-![License](https://img.shields.io/badge/license-MIT-green)
+# undefined
 
+![License]()
 
 ## Description
 
-ttt
+Description
 
 ## Table of Contents
 
@@ -18,15 +17,15 @@ ttt
 
 ## Installation
 
-t
+Installation instructions
 
 ## Usage
 
-t
+Usage information
 
 ## License
 
-This application is covered under the MIT license.
+License information
 
 ## Contributing
 
@@ -34,7 +33,7 @@ Contribution guidelines
 
 ## Tests
 
-t
+Testing instructions
 
 ## Questions
 
