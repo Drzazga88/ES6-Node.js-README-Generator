@@ -1,10 +1,10 @@
-# test
+# Test
 
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
 ## Description
 
-test
+Test
 
 ## Table of Contents
 
@@ -17,11 +17,11 @@ test
 
 ## Installation
 
-test
+Test
 
 ## Usage
 
-test
+Test
 
 ## License
 
@@ -29,11 +29,11 @@ This application is covered under the GPL license.
 
 ## Contributing
 
-test
+Test
 
 ## Tests
 
-test
+Testing instructions
 
 
 ## Questions
