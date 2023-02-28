@@ -1,10 +1,10 @@
-# Test
+# ES6-Node.js README Generator
 
-![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
 
-Test
+README Generator is a command-line interface tool that allows user to generate README file for their projects. Title, description, installation instructions, usage, license, contribution guide, and test instructions. The tool uses Node.js and its packages: inquirer and fs to get the information from the user and pass it to a README.d file.
 
 ## Table of Contents
 
@@ -17,19 +17,19 @@ Test
 
 ## Installation
 
-Test
+1. Clone the repository to your local computer. 2. Change directory. 3. Install the necessary dependencies unsing npm: npm install
 
 ## Usage
 
-Test
+1. Run index.js file in your terminal to start the tool: node index.js. 2. Follow the prompts to answer the questions. 3. New README file called README.md will be generated in the root directory of your project. 4. Open the file to review and make edits if needed.
 
 ## License
 
-This application is covered under the GPL license.
+This application is covered under the MIT license.
 
 ## Contributing
 
-Test
+Troubleshooting done with the help of Daniel Polak - Front End Developer.
 
 ## Tests
 
